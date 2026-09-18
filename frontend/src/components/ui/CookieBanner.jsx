@@ -30,11 +30,11 @@ export const CookieBanner = () => {
     <AnimatePresence>
       {isVisible && (
         <motion.div
-          initial={{ y: 50, opacity: 0, x: '-50%' }}
-          animate={{ y: 0, opacity: 1, x: '-50%' }}
-          exit={{ y: 50, opacity: 0, x: '-50%' }}
+          initial={{ y: 50, opacity: 0, x: 20 }}
+          animate={{ y: 0, opacity: 1, x: 0 }}
+          exit={{ y: 50, opacity: 0, x: 20 }}
           transition={{ type: 'spring', stiffness: 260, damping: 25 }}
-          className="fixed bottom-2 left-1/2 sm:bottom-4 z-[9999] w-[95%] max-w-[460px] bg-[#FAF9F6] border border-stone-200/60 rounded-xl sm:rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.12)] p-2 sm:p-2.5 flex items-center justify-between gap-3 sm:gap-4 select-none"
+          className="fixed bottom-1 right-2 sm:bottom-2 sm:right-4 z-[9999] w-[95%] max-w-[460px] bg-[#FAF9F6] border border-stone-200/60 rounded-xl sm:rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.12)] p-2 sm:p-2.5 flex items-center justify-between gap-3 sm:gap-4 select-none"
         >
           {/* Left Icon (Squircle) */}
           <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 bg-[#FDE08B] border border-[#1B365D]/20 rounded-lg flex items-center justify-center">
