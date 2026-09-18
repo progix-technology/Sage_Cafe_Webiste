@@ -1,0 +1,87 @@
+<svg width="800px" height="800px" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#7FA382">
+  <!-- Oval Glass Rim with hand-drawn organic double lines -->
+  <ellipse cx="51" cy="18" rx="34" ry="10" stroke-width="3" stroke-linecap="round" />
+  <path d="M 20 17 C 24 10, 78 9, 84 16 C 87 21, 25 24, 18 17" stroke-width="2" stroke-linecap="round" />
+  <path d="M 24 20 C 36 23.5, 66 23.5, 77 19.5" stroke-width="1.6" />
+
+  <!-- Glass Wall Taper Outline -->
+  <path
+    d="M 18.5 19 L 26 78 L 30 100 L 35 106 L 67 106 L 72 100 L 76.5 78 L 84 19"
+    stroke-width="3.2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Heavy Beveled Bottom Base -->
+  <path
+    d="M 28 88 L 34 100 L 68 100 L 74 88"
+    stroke-width="2.4"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path d="M 34 100 L 35 106" stroke-width="2" stroke-linecap="round" />
+  <path d="M 68 100 L 67 106" stroke-width="2" stroke-linecap="round" />
+  <path d="M 31 100 L 71 100" stroke-width="1.8" />
+
+  <!-- Liquid Meniscus Line -->
+  <path
+    d="M 22 46 C 36 53, 66 53, 80 45"
+    stroke-width="2.8"
+    stroke-linecap="round"
+  />
+
+  <!-- Left Ice Cube (Rounded shape with inner oval highlight) -->
+  <path
+    d="M 33 34 C 33 27, 44 25, 49 30 C 53 35, 47 43, 40 43 C 34 43, 33 39, 33 34 Z"
+    fill="#7FA382"
+    fill-opacity="0.4"
+    stroke-width="2.6"
+    stroke-linejoin="round"
+  />
+  <ellipse cx="40" cy="34" rx="4.5" ry="3" fill="#FAF7F2" stroke="#7FA382" stroke-width="2" />
+
+  <!-- Right Ice Cube (Faceted crystalline ice cube with shaded planes) -->
+  <polygon
+    points="56,31 66,25 76,30 67,37"
+    fill="#7FA382"
+    fill-opacity="0.4"
+    stroke-width="2.4"
+    stroke-linejoin="round"
+  />
+  <polygon
+    points="56,31 67,37 66,48 56,41"
+    fill="#7FA382"
+    stroke-width="2.4"
+    stroke-linejoin="round"
+  />
+  <polygon
+    points="67,37 76,30 76,41 66,48"
+    fill="#7FA382"
+    fill-opacity="0.75"
+    stroke-width="2.4"
+    stroke-linejoin="round"
+  />
+
+  <!-- Scalloped Arch Flutes on Bottom Half -->
+  <path
+    d="M 27 75 C 27 54, 38 52, 41 77"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+  <path
+    d="M 41 77 C 43 51, 57 51, 60 77"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+  <path
+    d="M 60 77 C 63 53, 74 54, 76 75"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+
+  <!-- Arch Downward Drop Slits -->
+  <path d="M 41 77 L 42 96" stroke-width="2.6" stroke-linecap="round" />
+  <path d="M 60 77 L 61 96" stroke-width="2.6" stroke-linecap="round" />
+  <path d="M 27 75 L 29 88" stroke-width="2" stroke-linecap="round" />
+  <path d="M 76 75 L 74 88" stroke-width="2" stroke-linecap="round" />
+</svg>

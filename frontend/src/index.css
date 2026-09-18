@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Tan Mon Cheri';
+  src: local('Tan Mon Cheri'), local('TAN - MON CHÉRI'), local('TAN MON CHERI'), local('Tan-Mon-Cheri'),
+       url('/fonts/tan-mon-cheri.woff2') format('woff2'),
+       url('/fonts/tan-mon-cheri.woff') format('woff'),
+       url('/fonts/tan-mon-cheri.otf') format('opentype'),
+       url('/fonts/tan-mon-cheri.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+/* Custom Smooth Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0604;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a1a11;
+  border-radius: 4px;
+  border: 1px solid rgba(229, 139, 32, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e58b20;
+}
+
+/* Glassmorphism & Surface Utilities */
+@layer components {
+  .font-moncheri {
+    font-family: 'Tan Mon Cheri', 'TAN - MON CHÉRI', 'Italiana', 'Cormorant Garamond', 'Playfair Display', serif;
+  }
+
+  .font-stevie {
+    font-family: "Stevie Sans", "Plus Jakarta Sans", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  .font-stevie-display {
+    font-family: "Stevie Sans", "Belleza", "Italiana", "Poiret One", "Syne", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  .font-cursive-script {
+    font-family: "Caveat", "Covered By Your Grace", "Marck Script", "Nothing You Could Do", cursive;
+  }
+
+  .glass-card {
+    background: rgba(24, 15, 10, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(229, 139, 32, 0.15);
+  }
+
+  .glass-card-hover {
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .glass-card-hover:hover {
+    background: rgba(36, 22, 15, 0.85);
+    border-color: rgba(244, 178, 69, 0.4);
+    box-shadow: 0 12px 36px -8px rgba(229, 139, 32, 0.25);
+    transform: translateY(-3px);
+  }
+
+  .glass-nav {
+    background: rgba(14, 9, 6, 0.82);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(229, 139, 32, 0.12);
+  }
+
+  .gold-gradient-text {
+    background: linear-gradient(135deg, #FDF8F0 0%, #F4B245 45%, #E58B20 85%, #C85A32 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .warm-glow {
+    position: relative;
+  }
+
+  .warm-glow::before {
+    content: '';
+    position: absolute;
+    inset: -10%;
+    background: radial-gradient(circle, rgba(229, 139, 32, 0.18) 0%, rgba(10, 6, 4, 0) 70%);
+    z-index: -1;
+    pointer-events: none;
+  }
+}
+
+/* 3D Canvas Container */
+.canvas-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.canvas-interactive {
+  pointer-events: auto;
+}
+
+/* Shimmer Loader */
+.shimmer-mask {
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.08) 50%, rgba(255,255,255,0) 100%);
+  background-size: 200% 100%;
+}
+
+@keyframes shimmerWave {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmerWave 1.8s infinite linear;
+}
+
