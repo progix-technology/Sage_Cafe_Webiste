@@ -8,6 +8,7 @@ import { ReservationModal } from './components/reservation/ReservationModal';
 import { CartDrawer } from './components/order/CartDrawer';
 import { TableOrderModal } from './components/order/TableOrderModal';
 import { SplashScreen } from './components/ui/SplashScreen';
+import { CookieBanner } from './components/ui/CookieBanner';
 import { HomePage } from './pages/HomePage';
 import { MenuPage } from './pages/MenuPage';
 import { OurStoryPage } from './pages/OurStoryPage';
@@ -83,6 +84,7 @@ export function App() {
           <ReservationModal />
           <CartDrawer />
           <TableOrderModal />
+          <CookieBanner />
         </div>
       </Router>
     </>
