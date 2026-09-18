@@ -6,6 +6,23 @@ import { ASSETS } from '../assets/images';
 import { useUIStore } from '../store/useUIStore';
 import { WhiskeyGlassDoodle } from '../assets/icons/DoodleIcons';
 
+const ImageWithLoader = ({ src, alt, className }) => {
+  const [loaded, setLoaded] = useState(false);
+  return (
+    <>
+      {!loaded && <div className="absolute inset-0 bg-stone-200 animate-pulse" />}
+      <img
+        src={src}
+        alt={alt}
+        loading="lazy"
+        decoding="async"
+        onLoad={() => setLoaded(true)}
+        className={`${className} ${loaded ? 'opacity-100' : 'opacity-0'} transition-opacity duration-700`}
+      />
+    </>
+  );
+};
+
 export const OurStoryPage = () => {
   const { openReserveModal } = useUIStore();
   const [activeStackIndex, setActiveStackIndex] = useState(0);
@@ -269,11 +286,9 @@ export const OurStoryPage = () => {
                 }}
                 className="absolute inset-0 w-full h-[120%] -top-[10%]"
               >
-                <img
+                <ImageWithLoader
                   src={ASSETS.story1}
                   alt="Sagē Café Atmosphere Background"
-                  loading="lazy"
-                  decoding="async"
                   className="w-full h-full object-cover filter brightness-[0.98] contrast-[1.02] scale-105"
                 />
               </motion.div>
@@ -286,11 +301,9 @@ export const OurStoryPage = () => {
                 }}
                 className="relative z-10 w-[78%] sm:w-[80%] md:w-[82%] h-[74%] sm:h-[76%] md:h-[80%] overflow-hidden shadow-[0_20px_45px_rgba(0,0,0,0.35)] border border-white/60"
               >
-                <img
+                <ImageWithLoader
                   src={ASSETS.story1}
                   alt="Sagē Café Atmosphere"
-                  loading="lazy"
-                  decoding="async"
                   className="w-full h-full object-cover filter brightness-[1.0]"
                 />
               </motion.div>
@@ -807,11 +820,9 @@ export const OurStoryPage = () => {
                 }}
                 className="absolute inset-0 w-full h-[120%] -top-[10%]"
               >
-                <img
+                <ImageWithLoader
                   src={ASSETS.image2}
                   alt="Sagē Terrace Atmosphere Background"
-                  loading="lazy"
-                  decoding="async"
                   className="w-full h-full object-cover filter brightness-[0.98] contrast-[1.02] scale-105"
                 />
               </motion.div>
@@ -824,11 +835,9 @@ export const OurStoryPage = () => {
                 }}
                 className="relative z-10 w-[78%] sm:w-[80%] md:w-[82%] h-[74%] sm:h-[76%] md:h-[80%] overflow-hidden shadow-[0_20px_45px_rgba(0,0,0,0.35)] border border-white/60"
               >
-                <img
+                <ImageWithLoader
                   src={ASSETS.image2}
                   alt="Sagē Terrace Dining Occasions"
-                  loading="lazy"
-                  decoding="async"
                   className="w-full h-full object-cover filter brightness-[1.0]"
                 />
               </motion.div>
