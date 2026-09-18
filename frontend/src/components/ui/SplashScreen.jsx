@@ -63,18 +63,18 @@ export const SplashScreen = ({ onComplete }) => {
       <motion.div
         initial={{ x: '0%', skewX: 20 }}
         animate={{ x: '0%', skewX: 20 }}
-        exit={{ x: '-140%', skewX: 20 }}
+        exit={{ x: '-100%', skewX: 20 }}
         transition={{ duration: 1.25, ease: [0.72, 0, 0.18, 1], delay: 0.16 }}
-        className="absolute top-[-25vh] bottom-[-25vh] left-[-30vw] w-[95vw] bg-[#EAD9BE] z-10 pointer-events-none origin-center"
+        className="absolute top-[-50vh] bottom-[-50vh] left-[-100vw] w-[200vw] bg-[#EAD9BE] z-10 pointer-events-none origin-center"
       />
 
       {/* Right Gold Shutter */}
       <motion.div
         initial={{ x: '0%', skewX: 20 }}
         animate={{ x: '0%', skewX: 20 }}
-        exit={{ x: '140%', skewX: 20 }}
+        exit={{ x: '100%', skewX: 20 }}
         transition={{ duration: 1.25, ease: [0.72, 0, 0.18, 1], delay: 0.16 }}
-        className="absolute top-[-25vh] bottom-[-25vh] right-[-30vw] w-[95vw] bg-[#EAD9BE] z-10 pointer-events-none origin-center"
+        className="absolute top-[-50vh] bottom-[-50vh] right-[-100vw] w-[200vw] bg-[#EAD9BE] z-10 pointer-events-none origin-center"
       />
 
       {/* =========================================================================
@@ -84,18 +84,18 @@ export const SplashScreen = ({ onComplete }) => {
       <motion.div
         initial={{ x: '0%', skewX: 20 }}
         animate={{ x: '0%', skewX: 20 }}
-        exit={{ x: '-140%', skewX: 20 }}
+        exit={{ x: '-100%', skewX: 20 }}
         transition={{ duration: 0.85, ease: transitionEase, delay: 0 }}
-        className="absolute top-[-25vh] bottom-[-25vh] left-[-30vw] w-[95vw] bg-[#0A6473] z-20 pointer-events-none origin-center"
+        className="absolute top-[-50vh] bottom-[-50vh] left-[-100vw] w-[200vw] bg-[#0A6473] z-20 pointer-events-none origin-center"
       />
 
       {/* Right Teal Shutter */}
       <motion.div
         initial={{ x: '0%', skewX: 20 }}
         animate={{ x: '0%', skewX: 20 }}
-        exit={{ x: '140%', skewX: 20 }}
+        exit={{ x: '100%', skewX: 20 }}
         transition={{ duration: 0.85, ease: transitionEase, delay: 0 }}
-        className="absolute top-[-25vh] bottom-[-25vh] right-[-30vw] w-[95vw] bg-[#0A6473] z-20 pointer-events-none origin-center"
+        className="absolute top-[-50vh] bottom-[-50vh] right-[-100vw] w-[200vw] bg-[#0A6473] z-20 pointer-events-none origin-center"
       />
 
       {/* =========================================================================
