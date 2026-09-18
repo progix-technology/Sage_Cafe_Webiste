@@ -22,7 +22,7 @@ router.post('/login', async (req, res) => {
 
     const targetEmail = email.trim().toLowerCase();
     const masterEmail = (process.env.ADMIN_EMAIL || '').trim().toLowerCase();
-    const masterPassword = process.env.ADMIN_PASSWORD;
+    const masterPassword = (process.env.ADMIN_PASSWORD || '').trim();
 
     // Fast-track if MongoDB is currently disconnected or in error state
     if (mongoose.connection.readyState !== 1) {
