@@ -4,11 +4,13 @@
 
 @font-face {
   font-family: 'Tan Mon Cheri';
-  src: local('Tan Mon Cheri'), local('TAN - MON CHÉRI'), local('TAN MON CHERI'), local('Tan-Mon-Cheri'),
+  src: local('Tan Mon Cheri'), local('TAN - MON CHÉRI'), local('TAN MON CHERI'), local('Tan-Mon-Cheri');
+  /*
        url('/fonts/tan-mon-cheri.woff2') format('woff2'),
        url('/fonts/tan-mon-cheri.woff') format('woff'),
        url('/fonts/tan-mon-cheri.otf') format('opentype'),
        url('/fonts/tan-mon-cheri.ttf') format('truetype');
+  */
   font-weight: normal;
   font-style: normal;
   font-display: swap;

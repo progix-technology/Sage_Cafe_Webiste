@@ -49,6 +49,11 @@ app.use(
         return callback(null, true);
       }
       
+      // Allow any Vercel preview or production URLs
+      if (origin.endsWith('.vercel.app')) {
+        return callback(null, true);
+      }
+      
       if (allowedOrigins.includes(origin)) {
         return callback(null, true);
       }
